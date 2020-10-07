@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FindReplace</class>
+ <widget class="QDialog" name="FindReplace">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>381</width>
+    <height>207</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>346</width>
+     <height>182</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_5">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Find &amp;What</string>
+            </property>
+            <property name="buddy">
+             <cstring>findwhat</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="findwhat"/>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_4">
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Replace w&amp;ith</string>
+            </property>
+            <property name="buddy">
+             <cstring>replacewhat</cstring>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="replacewhat"/>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QCheckBox" name="casecheckbox">
+          <property name="text">
+           <string>&amp;Case sensitive</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QCheckBox" name="wholecheckbox">
+          <property name="text">
+           <string>Wh&amp;ole words</string>
+          </property>
+          <property name="checked">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>&amp;Syntax</string>
+          </property>
+          <property name="buddy">
+           <cstring>syntaxcombobox</cstring>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="syntaxcombobox">
+          <item>
+           <property name="text">
+            <string>Literal Text</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Regular Expression</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="verticalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>28</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QPushButton" name="findbutton">
+        <property name="text">
+         <string>&amp;Find</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="replacebutton">
+        <property name="text">
+         <string>&amp;Replace</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="repallbut">
+        <property name="text">
+         <string>Replace &amp;All</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="verticalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>38</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="closebut">
+        <property name="text">
+         <string>&amp;Close</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>findwhat</tabstop>
+  <tabstop>replacewhat</tabstop>
+  <tabstop>casecheckbox</tabstop>
+  <tabstop>wholecheckbox</tabstop>
+  <tabstop>syntaxcombobox</tabstop>
+  <tabstop>findbutton</tabstop>
+  <tabstop>replacebutton</tabstop>
+  <tabstop>repallbut</tabstop>
+  <tabstop>closebut</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>closebut</sender>
+   <signal>clicked()</signal>
+   <receiver>FindReplace</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>284</x>
+     <y>182</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>195</x>
+     <y>-16</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

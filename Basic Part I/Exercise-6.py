@@ -1,0 +1,5 @@
+values = input('Input some comma seperate number: ')
+danhsach = values.split(',')
+tuples = tuple(danhsach)
+print(danhsach)
+print(tuples)
