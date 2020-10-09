@@ -22,7 +22,6 @@ def get_miles_driven():
     is_valid = is_valid_float(miles_driven)
     while not is_valid or not float(miles_driven) > 0:
         print("Enter positive numbers only! ")
-        miles_driven = input("Enter miles driven:     ")
         is_valid = is_valid_integer(miles_driven)
     miles_gone = float(miles_driven)
     return miles_gone
@@ -33,7 +32,6 @@ def get_gallons_used():
     is_valid = is_valid_float(gallons_used)
     while not is_valid or not float(gallons_used) > 0:
         print("Enter positive numbers only!    ")
-        gallons_used = input("Enter gallons of gas used: ")
     gallons_consumed = float(gallons_used)
     return gallons_consumed
 
@@ -43,7 +41,6 @@ def get_gas_price():
     is_valid = is_valid_float(gas_price)
     while not is_valid or not float(gas_price) > 0:
         print("Enter positive numbers only!    ")
-        gas_price = input("Enter gas price:    ")
     current_gas_price = float(gas_price)
     return current_gas_price
 
